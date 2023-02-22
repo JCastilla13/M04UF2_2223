@@ -1,0 +1,22 @@
+{
+  "name": "m04uf2_2223",
+  "version": "1.0.0",
+  "description": "UF2 de Llenguatge de marques",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCastilla13/M04UF2_2223.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCastilla13/M04UF2_2223/issues"
+  },
+  "homepage": "https://github.com/JCastilla13/M04UF2_2223#readme",
+  "dependencies": {
+    "mongodb": "^5.0.1"
+  }
+}
