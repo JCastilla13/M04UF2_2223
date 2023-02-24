@@ -1,20 +1,46 @@
 
 
+
+
+import React from 'react';
 import Title from './Title';
 import TaskForm from './TaskForm';
 import TaskList from './TaskList';
 
 import './App.css';
 
-function App() {
+class App extends React.Component {
+	constructor (props){
+		super(props);
+
+		this.state = {
+			tasklist: ["lista de la app", "otra tarea"]
+		};
+	}
+
+
+
+	addTask = (task) => {
+		console.log(task);
+	
+	this.state.tasklist.unshift(task);
+
+	this.setState({
+		taskList: this.state.tasklist
+
+	});
+}
+
+render() {
   return (
-    <main className="App">
+   	 <main className="App">
 		<Title text="TOD-o-App 2000" /> 
-		<TaskForm />
-		<TaskList />
-		<p>Tienes <strong>3</strong> tareas pendientes</p>
-    </main>
-  );
+		<TaskForm onAddTask = {this.addTask} />
+		<TaskList list={this.state.tasklist} />
+		<p>Tienes <strong>{this.state.tasklist.length}</strong> tareas pendientes</p>
+   	 </main>
+	  );
+   }
 }
 
 export default App;

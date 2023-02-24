@@ -12,7 +12,8 @@ class CountButton extends React.Component{
 		contador: 0
 
 		};
-	 }
+
+	}
 
 	render(){
 	
