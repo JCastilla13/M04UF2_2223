@@ -7,6 +7,11 @@ function App() {
    <div className="App">
    	<form className="formulario">
 	<p><CountButton /></p>
+	<p><CountButton /></p>
+	<p><CountButton /></p>
+	<p><CountButton /></p>
+	<p><CountButton /></p>
+	<p><CountButton /></p>
 	</form>
    </div>
   );
